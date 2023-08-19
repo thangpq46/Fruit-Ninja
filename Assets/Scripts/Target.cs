@@ -22,8 +22,11 @@ public class Target : MonoBehaviour
     {
         if (gameManager.isGameActive)
         {
-            Destroy(gameObject);
-            Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
+            DestroyTarget();
+            if (gameObject.CompareTag("Bad"))
+            {
+                gameManager.diseaseLive();
+            }
             gameManager.updateScore(pointValue);
         }
 

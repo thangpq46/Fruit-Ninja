@@ -32,7 +32,6 @@ public class GameManager : MonoBehaviour
             backgroundMusic.volume = volume;
             Debug.Log("Volume: " + volume);
         });
-        startGame(1);
     }
 
     private void changePause()
@@ -104,6 +103,8 @@ public class GameManager : MonoBehaviour
 
     public void startGame(int difficulty)
     {
+        textMeshPro.gameObject.SetActive(true);
+        textLives.gameObject.SetActive(true);
         textLives.text = "Lives: " + lives;
         isGameActive = true;
         spawnRate /= difficulty;

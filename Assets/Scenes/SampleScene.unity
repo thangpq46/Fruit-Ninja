@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 759068648}
   - component: {fileID: 759068650}
   m_Layer: 0
-  m_Name: Game Manger
+  m_Name: Game Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -460,7 +460,6 @@ MonoBehaviour:
   - {fileID: 172411768009965279, guid: d3e7dffd73b5a104bb999eaa398d5b7e, type: 3}
   - {fileID: 8673209758914676672, guid: e2c49d9d68dee274e84daf6329f727aa, type: 3}
   - {fileID: 7938336785149758138, guid: 821468e2f10e2724baacd588d5f4a687, type: 3}
-  - {fileID: 5384868863882923640, guid: 097e886b96574cd41817e6af8e41cbbb, type: 3}
   - {fileID: 1134820436093563283, guid: 8bcb60251426dc548ab5c4ece64d037c, type: 3}
   - {fileID: 6600064391232752695, guid: 21f1e2e480d79fd4d8dc886c822ddc96, type: 3}
   - {fileID: 9090411924230228570, guid: c5789c4d5bc0249408fa3b8db2d69d2e, type: 3}
@@ -1740,7 +1739,6 @@ GameObject:
   - component: {fileID: 1407195863}
   - component: {fileID: 1407195862}
   - component: {fileID: 1407195861}
-  - component: {fileID: 1407195860}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -1748,28 +1746,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &1407195860
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407195859}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1407195861
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1829,8 +1805,8 @@ Transform:
   m_GameObject: {fileID: 1407195859}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.3, y: 2.2960217, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 12}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3149,8 +3125,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: -4.828644, y: -1.7025757, z: 0}
+  m_Size: {x: 0.8691406, y: 0.6272583, z: 1}
+  m_Center: {x: 0.06542969, y: 0.1863708, z: 0}
 --- !u!96 &2007333260
 TrailRenderer:
   serializedVersion: 3
@@ -3172,7 +3148,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3193,7 +3169,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.25
+  m_Time: 0.3
   m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
@@ -3202,8 +3178,8 @@ TrailRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.018325806
-        value: 0.36842155
+        time: 0
+        value: 0.44970894
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -3211,8 +3187,8 @@ TrailRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.3717277
-        value: 0
+        time: 0.63756526
+        value: 0.053253174
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -3220,26 +3196,8 @@ TrailRenderer:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.4162303
+        time: 1
         value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.42931926
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.9685863
-        value: -0
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -3251,7 +3209,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 0.14351194, g: 0.49962813, b: 0.7075472, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -3276,7 +3234,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_ColorSpace: -1
+      m_ColorSpace: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
@@ -3300,8 +3258,8 @@ Transform:
   m_GameObject: {fileID: 2007333257}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalPosition: {x: 237.5, y: 196, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

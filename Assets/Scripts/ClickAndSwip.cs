@@ -16,7 +16,7 @@ public class ClickAndSwip : MonoBehaviour
     void Awake()
     {
         cam = Camera.main;
-        gameManager = GameObject.Find("Game Manger").GetComponent<GameManager>();
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         trailRenderer = GetComponent<TrailRenderer>();
         boxCollider = GetComponent<BoxCollider>();
         trailRenderer.enabled = false; boxCollider.enabled = false;
